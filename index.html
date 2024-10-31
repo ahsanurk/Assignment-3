@@ -16,6 +16,13 @@
         .font-manrope {
             font-family: "Manrope", serif;
         }
+
+        .bg-img {
+            background-image: url('./assets/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 
@@ -229,7 +236,7 @@
             <!-- Portfolio cards  -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 md:gap-6 my-10">
                 <!-- card-1  -->
-                <div class="border rounded-lg md:col-span-8 p-6 md:flex items-center md:gap-6 ">
+                <div class="border rounded-lg order-1 md:col-span-8 p-6 md:flex items-center md:gap-6 ">
                     <div class="w-full"><img class="w-full" src="./assets/img1.png" alt=""></div>
                     <div class="space-y-4">
                         <h4 class="text-2xl font-bold mt-4 md:mt-0">Commercial</h4>
@@ -247,11 +254,13 @@
                     </div>
                 </div>
                 <!-- card-2  -->
-                 <div class="md:col-span-4 border rounded-lg p-6 w-full"><img class="w-full h-full" src="./assets/img2.png" alt=""></div>
-                 <!-- card-3  -->
-                 <div class="md:col-span-3 border rounded-lg p-6 w-full"><img class=" w-full h-full" src="./assets/img3.png" alt=""></div>
-                 <!-- card-4  -->
-                <div class="border rounded-lg md:col-span-6 p-6 md:flex items-center md:gap-6 ">
+                <div class="md:col-span-4 order-2 border rounded-lg p-6 w-full"><img class="w-full h-full"
+                        src="./assets/img2.png" alt=""></div>
+                <!-- card-3  -->
+                <div class="md:col-span-3 order-5 md:order-3 border rounded-lg p-6 w-full"><img class=" w-full h-full"
+                        src="./assets/img3.png" alt=""></div>
+                <!-- card-4  -->
+                <div class="border rounded-lg order-4 md:col-span-6 p-6 md:flex items-center md:gap-6 ">
                     <div class="w-full"><img class="w-full h-full" src="./assets/img4.png" alt=""></div>
                     <div class="space-y-4">
                         <h4 class="text-2xl font-bold mt-4 md:mt-0">Commercial</h4>
@@ -267,8 +276,54 @@
                         </button>
                     </div>
                 </div>
-                <!-- card-4  -->
-                <div class="md:col-span-3 border rounded-lg p-6 w-full"><img class=" w-full h-full" src="./assets/img5.png" alt=""></div>
+                <!-- card-5  -->
+                <div class="md:col-span-3 border rounded-lg order-3 md:order-5 p-6 w-full"><img class=" w-full h-full"
+                        src="./assets/img5.png" alt=""></div>
+                <!-- card-5 for sm  -->
+                <div class="md:col-span-3 md:hidden border rounded-lg order-5 p-6 w-full"><img class=" w-full h-full"
+                    src="./assets/img5.png" alt=""></div>
+            </div>
+        </section>
+        <!-- let's connect -->
+        <section class="container mx-auto px-4 md:px-24 py-12 bg-img">
+            <div class="space-y-6">
+                <button class="btn bg-[#ABEF5F33] rounded-full px-10 mx-auto flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                        <path fill-rule="evenodd"
+                            d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <small class="text-[#494949]">Let’s Connect</small>
+                </button>
+                <h3 class=" text-2xl md:text-4xl lg:text-6xl font-bold text-center">Let’s Discuss Next Project</h3>
+                <p class="text-[#494949] text-center">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <!-- let's connect input form  -->
+            <div class=" md:w-full lg:w-2/3 mx-auto px-4 md:px-12 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <input type="text" placeholder="First Name*"
+                        class="input rounded-full outline-none border-none input-bordered w-full " />
+                    <input type="text" placeholder="Last Name*"
+                        class="input rounded-full outline-none border-none input-bordered w-full " />
+                    <input type="text" placeholder="Phone Number*"
+                        class="input rounded-full outline-none border-none input-bordered w-full " />
+                    <input type="text" placeholder="Email Number*"
+                        class="input  rounded-full outline-none border-noneinput-bordered w-full " />
+                </div>
+                <input type="text" placeholder="Write your message here"
+                    class="input rounded-xl input-bordered w-full pb-40 pt-5 mt-5" />
+                <button
+                    class="btn mt-5 bg-[#ABEF5F] border-none outline-none  w-full rounded-full capitalize text-xl font-bold">
+                    <small class="text-lg">Send Mail</small>
+                    <div class="bg-black rounded-full p-1 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </button>
             </div>
         </section>
 
